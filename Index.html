@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joissi Airane</title>
+</head>
+<body>
+    <script>
+        function soma()
+        {
+            var n=parseInt(document.calculo.n.value);
+            var n2=parseInt(document.calculo.n2.value)
+            var r=n+n2;
+            document.calculo.resultado.value=r;
+        }
+
+        function subtração()
+        {
+            var n=parseInt(document.calculo.n.value);
+            var n2=parseInt(document.calculo.n2.value)
+            var r=n-n2;
+            document.calculo.resultado.value=r;
+        } 
+
+        function multiplicação()
+        {
+            var n=parseInt(document.calculo.n.value);
+            var n2=parseInt(document.calculo.n2.value)
+            var r=n*n2;
+            document.calculo.resultado.value=r;
+        } 
+
+        function divisão()
+        {
+            var n=parseInt(document.calculo.n.value);
+            var n2=parseInt(document.calculo.n2.value)
+            var r=n/n2;
+            document.calculo.resultado.value=r;
+        } 
+    </script>
+
+    <form name="calculo">
+        <h2>Calculadora</h2> <br><br>
+         <text>Insira o primeiro número:</text> <input type="text" name="n" size="4">
+         <br><br>
+         <text>Insira o segundo número:</text> <input type="text" name="n2" size="4">
+         <br><br>
+         <text class="r">Resultado: </text> <input type="text" name="resultado" size="4">
+         <br> <br><input type="button" class="botao" value="Somar" onclick="javascript:soma();">
+         <input type="button" class="botao" value="Subtrair" onclick="javascript:subtração();">
+         <input type="button" class="botao" value="Multiplicar" onclick="javascript:multiplicação();">
+         <input type="button" class="botao" value="Dividir" onclick="javascript:divisão();">
+        <br>
+        <br>
+        <input type="reset" value="Limpar" onclick="document.calculo.focus()">
+    </form>
+</body>
+</html>
